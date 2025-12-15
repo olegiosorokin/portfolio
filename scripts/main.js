@@ -18,6 +18,7 @@ function renderTab(tabName) {
         <img src="${p.img}" alt="${p.title}">
         <h2>${p.title}</h2>
         <p>${p.description}</p>
+        <button class="button"><a href="${p.link}">Посмотреть проект</a></button>
       </div>
     `).join('')}
     </div>

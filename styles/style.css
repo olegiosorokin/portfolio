@@ -77,8 +77,13 @@ body {
     font-size: 18px;
     border: 3px solid #D0D5D8;
     border-radius: 8px;
-    padding: 10px;    
+    padding: 10px; 
     background-color: rgba(247, 249, 250, 0.307);    
+}
+
+.content-project {
+    display: flex;
+    flex-direction: column;
 }
 
 .content-about img {
@@ -106,13 +111,25 @@ body {
 .content-project a {
     text-align: center;
     text-decoration: none;
-    color: #2E2F33;
+    color: #6B6F76;
 }
 
 .content-project img {
     width: 100%;
     border: 1px solid #D0D5D8;
     border-radius: 8px;
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #6B6F76;
+    border: 3px solid #D0D5D8;
+    border-radius: 8px;
+    padding: 10px; 
+    background-color: rgba(247, 249, 250, 0.307);
+    margin-top: auto;
 }
 
 .footer {
