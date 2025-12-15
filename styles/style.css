@@ -1,0 +1,165 @@
+html {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+     
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    color: #2E2F33;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;    
+}
+
+.header {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    position: sticky;
+    top: 0;    
+    background-color: lch(95.23% 1.49 219.95 / 0.915);
+    border: 3px solid #D0D5D8;
+    border-radius: 8px;    
+}
+
+.name,
+.mail {
+    font-size: small;  
+}
+
+.name a,
+.mail a {
+    text-decoration: none;
+    color: #2E2F33;    
+}
+
+.name span,
+.mail span a,
+.footer span {
+    color: #6B6F76;    
+}
+
+.mail {
+    text-align: right;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 40px;    
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #2E2F33;
+}
+
+.main {
+    padding: 10px 10px;
+    flex: 1;
+    background-color: rgba(247, 249, 250, 0.807);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.content-about,
+.content-project {
+    font-size: 18px;
+    border: 3px solid #D0D5D8;
+    border-radius: 8px;
+    padding: 10px;    
+    background-color: rgba(247, 249, 250, 0.307);    
+}
+
+.content-about img {
+    max-height: 300px;
+    float: left;
+    border: 1px solid #D0D5D8;
+    border-radius: 8px; 
+    margin-right: 11px;
+}
+
+.content-about,
+.content-project h2 {
+    text-align: center;
+}
+
+.content-about p,
+.content-project p {
+    color: #6B6F76;
+}
+
+.content-project li {
+    color: #6B6F76;
+}
+
+.content-project a {
+    text-align: center;
+    text-decoration: none;
+    color: #2E2F33;
+}
+
+.content-project img {
+    width: 100%;
+    border: 1px solid #D0D5D8;
+    border-radius: 8px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 767px) and (min-width: 350px) {
+    .header {
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 5px;
+    }
+
+   .name {
+        padding: 0;
+   }
+
+    .navbar {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    .name {
+        text-align: center;
+    }
+
+    .mail {
+        text-align: center;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
