@@ -68,7 +68,7 @@
   max-height: max-content;
 }
 
-:root .dark {
+:root .dark_theme {
   --bg_base: #181a1b;
   --bg_card: #1f2123;
   --bg_tittle: #252728;
@@ -178,9 +178,7 @@
   .r_scroll .project_description p {
     height: 15em;
   }
-}
-
-@media (max-width: 1024px) {
+  
   .min {
     display: none;
   }
@@ -202,6 +200,12 @@
   .navbar {
     margin-top: 0;
     margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 779px) {
+  .project_description img {
+    width: 100%;
   }
 }
 
